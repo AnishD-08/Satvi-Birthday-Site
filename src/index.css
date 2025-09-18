@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-bg {
+  background: linear-gradient(270deg, #ff758c, #ff7eb3, #8ec5fc, #f9fcc3);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+.animate-gradient {
+  background: linear-gradient(
+    45deg, 
+    #ffc1cc, /* light pink */
+    #f8ffa8, /* light peach */
+    #c1f0f6, /* light cyan */
+    #d9b3ff, /* light lavender */
+    #f7ffb3  /* light yellow */
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 6s infinite linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
