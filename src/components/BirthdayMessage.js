@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 
-import { useRef, useEffect } from "react";
-
-
 export default function BirthdayMessage({ onNext }) {
 
     // const audioRef = useRef(null);
